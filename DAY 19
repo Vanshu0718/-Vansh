@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int T;
+    scanf("%d", &T);
+
+    while (T--) {
+        int PA, PB, QA, QB;
+        scanf("%d %d %d %d", &PA, &PB, &QA, &QB);
+
+        int penaltyP = (PA < PB) ? PA : PB;
+        int penaltyQ = (QA < QB) ? QA : QB;
+
+        if (penaltyP < penaltyQ) {
+            printf("P\n");
+        } else if (penaltyQ < penaltyP) {
+            printf("Q\n");
+        } else {
+            printf("TIE\n");
+        }
+    }
+
+    return 0;
+}
