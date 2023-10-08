@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int T;
+    scanf("%d", &T); // Read the number of test cases
+    
+    while (T--) {
+        int W, X, Y, Z;
+        scanf("%d %d %d %d", &W, &X, &Y, &Z); // Read initial amount, deposit, deduction, and number of months
+        
+        int finalBalance = W + (X * Z) - (Y * Z); // Calculate final balance
+        printf("%d\n", finalBalance); // Output the final balance
+    }
+    
+    return 0;
+}
