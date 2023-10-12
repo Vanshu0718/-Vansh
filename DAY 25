@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    float sum = 0, mean;
+    
+    // Ask the user for the number of elements
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    
+    // Ask the user to enter the elements
+    printf("Enter %d elements:\n", n);
+    for (i = 0; i < n; ++i) {
+        float num;
+        scanf("%f", &num);
+        sum += num; // Add the current number to the sum
+    }
+    
+    // Calculate the mean
+    mean = sum / n;
+    
+    // Display the mean
+    printf("Mean = %.2f\n", mean);
+    
+    return 0;
+}
