@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    // Seed the random number generator with current time
+    srand(time(NULL));
+    
+    // Generate a random number (0 or 1)
+    int randomNum = rand() % 2;
+    
+    // Map random number to Yes or No
+    char* decision = (randomNum == 0) ? "No" : "Yes";
+    
+    // Print the decision
+    printf("The decision is: %s\n", decision);
+    
+    return 0;
+}
