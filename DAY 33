@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int T; // Number of test cases
+    scanf("%d", &T);
+
+    while (T--) {
+        int X, Y; // Initial positions of the policeman and thief
+        scanf("%d %d", &X, &Y);
+
+        // Calculate the initial distance between the policeman and the thief
+        int D = abs(X - Y);
+
+        // Calculate the minimum time taken by the policeman to catch the thief
+        // Minimum time = Distance / Relative Speed
+        int time = D / 1; // Relative speed is 1 unit per second
+
+        // Print the minimum time for this test case
+        printf("%d\n", time);
+    }
+
+    return 0;
+}
