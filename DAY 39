@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int T; // Number of test cases
+    scanf("%d", &T);
+    
+    // Iterate through each test case
+    for (int t = 0; t < T; ++t) {
+        int A1, A2, B1, B2;
+        // Read input values for exports and imports of countries A and B
+        scanf("%d %d %d %d", &A1, &A2, &B1, &B2);
+        
+        // Calculate net exports and imports for country C
+        int netExports = A1 - A2;
+        int netImports = B1 - B2;
+        
+        // Check if country C is in trade surplus and print the result
+        if (netExports > netImports) {
+            printf("YES\n");
+        } else {
+            printf("NO\n");
+        }
+    }
+    return 0;
+}
