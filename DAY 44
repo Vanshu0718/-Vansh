@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int X, Y;
+    float totalTime;
+
+    // Read input values
+    scanf("%d %d", &X, &Y);
+
+    // Calculate total time Chef spends watching the movie
+    totalTime = (Y / 2.0) + (X - Y);
+
+    // Print the total time as an integer
+    printf("%d\n", (int)totalTime);
+
+    return 0;
+}
