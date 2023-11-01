@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int T; // Number of test cases
+    scanf("%d", &T);
+
+    // Iterate through each test case
+    while (T--) {
+        int N, M; // Number of friends and number of left shoes
+        scanf("%d %d", &N, &M);
+
+        // Calculate the minimum number of extra shoes needed
+        int extra_shoes_needed = (N > M) ? (N - M) : 0;
+
+        // Print the result for this test case
+        printf("%d\n", extra_shoes_needed);
+    }
+
+    return 0;
+}
